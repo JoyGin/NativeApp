@@ -18,3 +18,6 @@ add_library(
         SHARED
         ${CPP_FILES}
 )
+
+# 连接 ndk 中的日志模块
+target_link_libraries(sdk log)
